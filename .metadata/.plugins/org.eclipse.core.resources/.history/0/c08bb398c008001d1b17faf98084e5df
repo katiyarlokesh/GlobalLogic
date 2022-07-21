@@ -1,0 +1,18 @@
+package com.globallogic.July21;
+import java.util.*;
+
+
+public class List1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> employee= new ArrayList<String>();
+		employee.add("Aaksh");
+		employee.add("rohan");
+		System.out.println("Employees name are"+" "+employee);
+		employee.remove(1);
+		
+
+	}
+
+}

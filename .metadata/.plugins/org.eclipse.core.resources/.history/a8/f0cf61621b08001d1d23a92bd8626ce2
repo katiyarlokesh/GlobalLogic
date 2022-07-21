@@ -1,0 +1,33 @@
+package com.globallogic.July20;
+class Student<T> {
+	   private T t;
+
+	   public void add(T t) {
+	      this.t = t;
+	   }
+
+	   public T get() {
+	      return t;
+	   }   
+	}
+
+
+public class MyGenric1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		      Student<Integer> integerBox = new Student<Integer>();
+		      Student<String> stringBox = new Student<String>();
+
+		      integerBox.add(new Integer(10));
+		      stringBox.add(new String("Hello World"));
+
+		      System.out.println( integerBox.get());
+		      System.out.println( stringBox.get());
+		   }
+		
+
+	}
+
+
