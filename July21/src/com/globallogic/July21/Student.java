@@ -43,7 +43,7 @@ public class Student {
 		// Method 1
 		// To compare customers
 		@Override
-		public int compare(Student customer1, Student customer2) {
+		public String compare(Student customer1, Student customer2) {
 
 			// Comparing customers
 			int NameCompare = customer1.getName().compareTo(customer2.getName());

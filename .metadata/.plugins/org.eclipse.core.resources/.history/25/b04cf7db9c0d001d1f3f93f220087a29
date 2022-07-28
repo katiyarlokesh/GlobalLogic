@@ -1,0 +1,34 @@
+package com.globallogic.July27;
+
+import java.util.*;
+import java.util.function.Consumer;
+
+public class MyConsumer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> ls= new ArrayList<Integer>();
+		ls.add(10);
+		ls.add(20);
+		ls.add(30);
+		ls.add(45);
+		 Consumer<Integer> display = a -> System.out.println(a);
+		 display.accept(10);
+		 // consumer of list (passing list as type in consumer)
+		 Consumer<List<Integer>> sqrt= list->
+		 {
+			 for(int i=0;i<ls.size();i++){
+				 ls.set(i, ls.get(i)*ls.get(i));
+			 }
+		 };
+		 Consumer<List<Integer>> display1= list->
+		 list.stream().forEach(display);
+		 
+		 
+		 
+		
+		
+
+	}
+
+}

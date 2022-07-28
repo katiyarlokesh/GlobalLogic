@@ -1,0 +1,28 @@
+package com.globallogic.July27;
+import java.util.*;
+import java.util.function.Consumer;
+
+
+public class MyConsumer1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+List<String> cities=Arrays.asList("Chennai","Banglore","New Delhi");
+		
+		Consumer<String> printConsumer=t->System.out.println(t);
+		Consumer<List<String>> printConsumerList=list->list.stream().forEach(System.out::println);
+		
+		
+		
+		Consumer<List<String>> upperCaseConsumer=list->{
+			
+			for(int i=0;i<list.size();i++ )
+			{
+				list.set(i,list.get(i).toUpperCase());
+			}
+		};
+		
+
+	}
+
+}

@@ -108,11 +108,11 @@ public class ArrayofObject1 {
 		 
 		 
 		 //array of object 
-		// Employee[] arrStu=new Employee[3];
+		 Employee[] arrStu=new Employee[3];
 		 
 
 	// System.out.println("Enter the employee data");
-		// for(int i=0;i<3;i++)
+		 for(int i=0;i<3;i++)
 		 {
 			 int id=sc.nextInt();
 			 String name=sc.next();

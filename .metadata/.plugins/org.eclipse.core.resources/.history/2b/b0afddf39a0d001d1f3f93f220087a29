@@ -1,0 +1,21 @@
+package com.globallogic.July27;
+import java.util.*;
+import java.util.function.Consumer;
+
+
+public class MyConsumer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> ls= new ArrayList<Integer>();
+		ls.add(10);
+		ls.add(20);
+		ls.add(30);
+		ls.add(45);
+		 Consumer<Integer> display = a -> System.out.println(a);
+		
+		
+
+	}
+
+}

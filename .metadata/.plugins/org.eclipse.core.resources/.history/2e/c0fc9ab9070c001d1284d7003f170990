@@ -1,0 +1,31 @@
+
+package com.globallogic.July25;
+import java.util.*;
+interface Max{
+	public int max(int x,int y);
+}
+
+public class Max_no {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc =new Scanner(System.in);
+		Max l = (x,y)->
+		{
+			if(x>y){
+				return x;
+				
+			}
+			else{
+				return y;
+			}
+		};
+		System.out.println(l.max(sc.nextInt(),sc.nextInt()));
+		
+
+	}
+
+}
+
+
+
